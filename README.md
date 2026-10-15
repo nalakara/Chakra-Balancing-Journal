@@ -2,6 +2,8 @@
 
 > Jurnal harian panduan 21 hari untuk refleksi diri, pelacakan energi, dan penyelarasan cakra dengan bantuan AI wawasan emosional.
 
+🌐 **Live Demo**: https://chakra-balancing-journal.vercel.app
+
 ---
 
 ## Overview
@@ -112,3 +114,17 @@ Aplikasi dibangun sebagai Single Page Application (SPA) berbasis React 19 dan Ty
 - **Prioritas Pertama**: Tambahkan penyimpanan persisten, minimal browser `localStorage` atau backend database (seperti Firebase Firestore) agar input jurnal pengguna tidak hilang.
 - **Amankan API Key**: Pindahkan pemanggilan `@google/genai` ke backend API proxy (Express / Cloud Run / Serverless Function) agar API Key Gemini tidak terekspos ke klien.
 - **Perbaiki Build Tailwind**: Ganti script CDN Tailwind dengan integrasi `@tailwindcss/vite` atau Tailwind CLI standar agar performa lebih cepat dan bebas dependensi runtime pihak ketiga.
+
+## Cara Menjalankan
+
+```bash
+npm install
+GEMINI_API_KEY=isi-kunci-anda npm run dev
+```
+
+Buka `http://localhost:5173`. Tanpa API key, jurnal dan pelacakan tetap berfungsi; hanya analisis AI yang nonaktif.
+---
+
+## License
+
+MIT License © 2026 Yudhan Sebastian
